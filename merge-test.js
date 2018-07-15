@@ -17,15 +17,12 @@ function MyFetchJsonp(url, options) {
         return data;
     })
 }
-1212
 class App extends React.Component {
 
     state = {
         city: "",
         data: {}
     }
-
-11212312312
     fetchDate = async () => {
         let city = this.state.city;
         let data = await MyFetchJsonp(`https://bird.ioliu.cn/weather?city=${city}`, {jsonpCallback: 'callback'});
@@ -42,7 +39,6 @@ class App extends React.Component {
             city: ev.target.value
         })
     }
-111111111
     render() {
         let {data} = this.state
         return (<div>
@@ -60,7 +56,6 @@ class App extends React.Component {
         )
     }
 }
-11111111111111
 ReactDOM.render(
     <App/>
     , document.querySelector("#root"));
