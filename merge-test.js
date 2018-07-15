@@ -2,15 +2,15 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import fetchJsonp from 'fetch-jsonp';
 
-
+11212312312
 function MyFetchJsonp(url, options) {
     return fetchJsonp(url, options).then(res => {
         return res.json();
     }).then(data => {
-        return data;11212312312
+        return data;
     })
 }
-
+11212312312
 class App extends React.Component {
 
     state = {
@@ -18,7 +18,15 @@ class App extends React.Component {
         data: {}
     }
 
+222222222222222222222222
+222222222222222222222222
+222222222222222222222222
+222222222222222222222222
 
+222222222222222222222222
+222222222222222222222222
+222222222222222222222222
+222222222222222222222222
     fetchDate = async () => {
         let city = this.state.city;
         let data = await MyFetchJsonp(`https://bird.ioliu.cn/weather?city=${city}`, {jsonpCallback: 'callback'});
@@ -35,7 +43,7 @@ class App extends React.Component {
             city: ev.target.value
         })
     }
-
+11212312312
     render() {
         let {data} = this.state
         return (<div>
@@ -53,7 +61,7 @@ class App extends React.Component {
         )
     }
 }
-
+11212312312
 ReactDOM.render(
     <App/>
     , document.querySelector("#root"));
