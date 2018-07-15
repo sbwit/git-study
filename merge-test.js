@@ -7,7 +7,7 @@ function MyFetchJsonp(url, options) {
     return fetchJsonp(url, options).then(res => {
         return res.json();
     }).then(data => {
-        return data;
+        return data;11212312312
     })
 }
 
